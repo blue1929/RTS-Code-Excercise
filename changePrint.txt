@@ -1,0 +1,49 @@
+
+/*
+Author: Mridul Sen 
+Code Language: java
+Requirement:#3 If you could change 1 thing about your favorite framework/language/platform (pick one), what would it be?
+          
+*/
+
+I wish I could remove the separate use of System.out.println and System.out.print.
+
+import java.util.*;
+import java.io.*;
+  
+public class Main {
+    public static void main(String[] args)
+    {
+        System.out.println("Favourite 1");
+  
+        System.out.println("Favourite 2");
+    }
+}
+
+This will print the output in two separate lines. 
+
+import java.util.*;
+import java.io.*;
+  
+public class Main {
+    public static void main(String[] args)
+    {
+        System.out.print("Favourite 1");
+  
+        System.out.print("Favourite 2");
+    }
+}
+
+This will print the output in altogther in single line which can be done using a concatenation. 
+
+
+This two lines could have been used as one output statement. So if I use two separate statement blocks
+then it should print it in two lines. If needed to be printed in one line then can be done as one line  
+
+        System.out.print("Favourite 1" + "Favourite 2") instead of
+   
+        System.out.print("Favourite 1");
+  
+        System.out.print("Favourite 2");
+
+For the System.out.print we can concatenate. So the println from System.out.println can be removed and System.out.print be used as more generic;
